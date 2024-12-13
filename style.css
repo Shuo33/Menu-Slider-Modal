@@ -13,6 +13,12 @@
 body {
     font-family: 'lato', sans-serif;
     margin: 0;
+    transition: transform 0.3s ease; 
+}
+
+body.show-nav {
+    /* width of the nav */
+    transform: translateX(200px);
 }
 
 nav {
@@ -136,6 +142,10 @@ header .toggle {
     bottom: 0;
 }
 
+.modal-container.show-modal {
+    display: block;
+}
+
 .modal {
     background-color: #fff; 
     border-radius: 5px;
@@ -155,6 +165,9 @@ header .toggle {
     
     /* position the element to the center of the page (instead of it's top left corner)  */
     transform: translate(-50%, -50%);
+
+    animation-name: modalopen; 
+    animation-duration: var(--modal-duration);
 }
 
 .modal-header {
@@ -194,4 +207,14 @@ header .toggle {
     top: 0; 
     right: 0;
     background: transparent; 
+}
+
+@keyframes modalopen {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
