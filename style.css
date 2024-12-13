@@ -66,3 +66,132 @@ nav ul li a {
 nav ul li a:hover {
     text-decoration: underline ;
 }
+
+header {
+    background-color: var(--primary-color);
+    color: #fff;
+    font-size: 130%;
+
+    /* make the parent relative so can we position it's child with absolute, like the buttom for example */
+    position: relative; 
+
+    padding: 40px 15px;
+    text-align: center;
+}
+
+
+header h1 {
+    margin: 0;
+}
+
+header p {
+    margin: 30px 0;
+}
+
+button, 
+input[type='submit'] {
+    background-color: var(--secondary-color);
+    border: 0; 
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    padding: 8px 12px;
+}
+
+button:focus {
+    outline: none; 
+}
+
+header .toggle {
+    background-color: rgba(0,0,0,0.3);
+    position: absolute;
+    left: 20px;
+    top: 20px;
+}
+
+.cta-btn {
+    font-size: 20px;
+    padding: 12px 20px;
+}
+
+.container {
+    padding: 15px;
+
+    /* set it to the center  */
+    margin: 0 auto;
+
+    width: 800px;
+    max-width: 100%;
+}
+
+.modal-container {
+    background-color: rgba(0,0,0, 0.6);
+    display: none; 
+
+    /* take the element out of it's normal document flow and make it cover the entire page  */
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.modal {
+    background-color: #fff; 
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    width: 400px;
+    max-width: 100% ;
+
+    /* keep the content inside of it's container */
+    overflow: hidden;
+
+    /* take the element out of it's normal document flow, it's positioned relative to it's closest position ancestor(if any) or to the initial containing block */
+    position: absolute;
+
+    /* the top left corner of the element will be positioned in the center of the page (horizontally and vertically)  */
+    top: 50%;
+    left: 50%;
+    
+    /* position the element to the center of the page (instead of it's top left corner)  */
+    transform: translate(-50%, -50%);
+}
+
+.modal-header {
+    background: var(--primary-color);
+    color: #fff;
+    padding: 15px;
+}
+
+
+.modal-header h3 {
+    margin: 0;
+    border-bottom: 1px solid #333;
+}
+
+.modal-content {
+    padding: 20px;
+}
+
+.modal-form div {
+    margin: 15px 0;
+}
+
+.modal-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.modal-form .form-input {
+    padding: 8px;
+    width: 100%;
+}
+
+.close-btn {
+    font-size: 25px;
+    /* take the element out of it's document flow and re-position it as needed  */
+    position: absolute; 
+    top: 0; 
+    right: 0;
+    background: transparent; 
+}

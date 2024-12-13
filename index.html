@@ -12,6 +12,7 @@
 </head>
 
 <body>
+    <!-- nav -->
     <nav>
         <div class="logo">
             <img src="https://randomuser.me/api/portraits/men/76.jpg" alt="user"/>
@@ -24,6 +25,7 @@
         </ul>
     </nav>
 
+    <!-- header -->
     <header>
         <button id="toggle" class="toggle">
             <i class="fa fa-bars fa-2x"></i>
@@ -36,6 +38,7 @@
         <button class="cta-btn" id="open">Sign Up</button>
     </header>
 
+    <!-- body -->
     <div class="container">
         <h2>What is this landing page about ?</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, doloremque officiis quibusdam nihil ullam distinctio possimus voluptate perspiciatis illo harum.</p>
@@ -58,36 +61,44 @@
     <!-- Modal -->
     <div class="modal-container" id="modal">
         <div class="modal">
+            <!-- button -->
             <button class="close-btn" id="close">
                 <i class="fa fa-times"></i>
             </button>
+
             <div class="modal-header">
                 <h3>Sign Up</h3>
             </div>
+
             <div class="modal-content">
                 <p>Register with us tp get offers, support and more</p>
+
+                <!-- form -->
                 <form class="modal-form">
                     <!-- name -->
                     <div>
                         <label for="name">Name</label>
-                        <input type="text" id="name" placeholder="Enter Name">
+                        <input type="text" id="name" placeholder="Enter Name" class="form-input">
                     </div>
                     <!-- email -->
                     <div>
                         <label for="email">Email</label>
-                        <input type="email" id="email" placeholder="Enter Email">
+                        <input type="email" id="email" placeholder="Enter Email"
+                        class="form-input">
                     </div>
                     <!-- password -->
                     <div>
                         <label for="password">Password</label>
-                        <input type="password" id="password" placeholder="Enter password">
+                        <input type="password" id="password" placeholder="Enter password" class="form-input">
                     </div>
                     <!-- confirm password -->
                     <div>
                         <label for="password2">Confirm Password</label>
-                        <input type="password" id="password2" placeholder="Confirm Password">
+                        <input type="password" id="password2" placeholder="Confirm Password" class="form-input">
                     </div>
+
                     <input type="submit" value="submit" class="submit-btn">
+
                 </form>
             </div>
         </div>
